@@ -39,6 +39,7 @@ unsafe impl Impl for SingleCoreCriticalSection {
                 sreg = out(reg) sreg_restore,
             )
         };
+        asm!("cli");
         sreg_restore
     }
 
