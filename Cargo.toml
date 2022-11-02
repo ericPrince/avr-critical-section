@@ -1,0 +1,9 @@
+[package]
+name = "avr-critical-section"
+version = "1.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+critical-section = { version = "1.1.1", features = ["restore-state-u8"] }
